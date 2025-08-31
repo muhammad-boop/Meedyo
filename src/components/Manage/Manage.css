@@ -1,0 +1,365 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../../assets/Fonts/inter/Inter-Regular.otf);
+}
+@font-face {
+  font-family: "Syne";
+  src: url(../../assets/Fonts/syne/OTF/Syne-Regular.otf);
+}
+.manage-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh; /* full viewport height */
+  padding: 130px 147px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: #051023;
+  background-size: cover; /* zoom out fix */
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glowing effect using rgba color */
+.manage-container::after {
+  content: "";
+  position: absolute;
+  bottom: -50px; /* thoda outside the container */
+  right: -50px;
+  width: 400px;
+  height: 400px;
+  background: rgba(100, 91, 255, 0.38);
+  filter: blur(161px);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.manage-container-main {
+  display: flex;
+  width: 100%;
+  max-width: 1145px;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+.manage-container-main .frame-49 {
+  display: flex;
+  align-items: center;
+}
+
+.btn-manage-1 {
+  display: flex;
+  width: 212px;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+.btn-manage-1 p {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px; /* 126.667% */
+  letter-spacing: -0.15px;
+}
+
+.line01 {
+  width: 212px;
+  height: 1px;
+  background: #fff;
+}
+
+.line02 {
+  width: 212px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.line03 {
+  width: 212px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.btn-manager-2 p {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+
+  /* Body 1 */
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px; /* 126.667% */
+  letter-spacing: -0.15px;
+}
+
+.btn-manager-3 {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px; /* 126.667% */
+  letter-spacing: -0.15px;
+}
+
+.manage-container-main h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Syne;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 53px; /* 126.19% */
+  letter-spacing: -1.47px;
+}
+
+.frame-73 {
+  margin-top: 20px;
+  display: flex;
+  height: 339px;
+  padding: 66px 122px;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  align-self: stretch;
+  border-radius: 10px;
+  border: 1px solid var(--Stroke-Gradient, #0c1e3c);
+  background: rgba(12, 24, 42, 0.5);
+}
+
+.upper-icon {
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping */
+  justify-content: center;
+  gap: 30px; /* adjust spacing */
+}
+
+.frame-73-icon-1 {
+  display: flex;
+  width: 69px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.frame-73-icon-1-img {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+  background: var(--Shade-1, #f9f5ff);
+}
+
+.frame-73-icon-1 p {
+  color: #fff;
+
+  /* Body 1 */
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px; /* 126.667% */
+  letter-spacing: -0.15px;
+}
+
+.frame-73-icon-2 {
+  display: flex;
+  width: 70px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.frame-73-icon-2-img {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+  background: var(--Shade-1, #f9f5ff);
+}
+
+.frame-73-icon-2 p {
+  color: #fff;
+
+  /* Body 1 */
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px; /* 126.667% */
+  letter-spacing: -0.15px;
+}
+
+.btn-component-08 {
+  display: flex;
+  width: 149px;
+  height: 24px;
+  align-items: center;
+  gap: 5px;
+  margin-top: 40px;
+}
+
+.btn-component-08-text {
+  display: flex;
+  height: 24px;
+  padding: 1px 11px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  background: var(--Accent-Primary, #645bff);
+}
+
+.btn-component-08-text p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px; /* 130.769% */
+  letter-spacing: -0.26px;
+}
+
+.btn-icon-component {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  padding: 7px 4px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 0.8px solid #fff;
+}
+
+.btn-icon-component svg {
+  width: 12px;
+  height: 6px;
+  flex-shrink: 0;
+}
+
+/* Large Screens */
+@media (max-width: 1440px) {
+  .manage-container {
+    padding: 120px 8%;
+  }
+  .manage-container-main h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .frame-73 {
+    padding: 60px 8%;
+  }
+  .upper-icon {
+    gap: 80px;
+  }
+}
+
+/* Medium Screens */
+@media (max-width: 1024px) {
+  .manage-container {
+    padding: 100px 6%;
+  }
+  .manage-container-main h1 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .frame-73 {
+    padding: 50px 6%;
+    gap: 40px;
+  }
+  .upper-icon {
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  .btn-manage-1 {
+    width: 180px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .manage-container {
+    padding: 80px 5%;
+  }
+  .manage-container-main h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .frame-73 {
+    padding: 40px 5%;
+    gap: 30px;
+  }
+  .upper-icon {
+    gap: 40px;
+    justify-content: center;
+  }
+  .btn-manage-1 {
+    width: 150px;
+  }
+  .frame-73-icon-1,
+  .frame-73-icon-2 {
+    width: 55px;
+  }
+  .frame-73-icon-1-img,
+  .frame-73-icon-2-img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .manage-container {
+    padding: 60px 4%;
+  }
+  .manage-container-main h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .frame-73 {
+    padding: 30px 4%;
+    gap: 25px;
+  }
+  .upper-icon {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .btn-manage-1 {
+    width: 130px;
+  }
+  .frame-73-icon-1,
+  .frame-73-icon-2 {
+    width: 50px;
+  }
+  .frame-73-icon-1-img,
+  .frame-73-icon-2-img {
+    width: 35px;
+    height: 35px;
+  }
+  .btn-component-08 {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

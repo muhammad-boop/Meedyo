@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../../assets/Fonts/inter/Inter-Regular.otf);
+}
+@font-face {
+  font-family: "Syne";
+  src: url(../../assets/Fonts/syne/OTF/Syne-Regular.otf);
+}
+
+/* ---------- Navbar Base ---------- */
+.navbar {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  height: 80px;
+  padding: 20px 100px 0 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.frame-17 {
+  display: flex;
+  width: 100%;
+  max-width: 1240px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 120px;
+  gap: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-1 {
+  display: flex;
+  padding: 10.69px 19.2px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.link-1:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.link-1 p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: -0.15px;
+}
+
+.container-btn-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-left: 90px;
+}
+
+.main-nav-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.main-nav-btns .login-btn {
+  display: flex;
+  padding: 10.69px 22.4px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 800px;
+  background: #fff;
+  box-shadow: 0 0 0 2px #3959ff inset;
+}
+
+.login-btn p {
+  color: #645bff;
+  font-family: Syne;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.72px;
+}
+
+.free-trial-btn {
+  display: flex;
+  padding: 10.69px 22.4px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 800px;
+  background: #645bff;
+}
+
+.free-trial-btn p {
+  color: #fff;
+  font-family: Syne;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.72px;
+}
+
+/* ---------- Hamburger Menu ---------- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 1024px) {
+  .frame-17 {
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+
+  .container-nav-links,
+  .container-btn-nav {
+    margin-left: 0;
+    gap: 20px;
+  }
+
+  .navigation {
+    gap: 15px;
+  }
+
+  .link-1 {
+    padding: 8px 14px;
+  }
+
+  .main-nav-btns .login-btn,
+  .free-trial-btn {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-nav-links,
+  .container-btn-nav {
+    display: none;
+  }
+
+  .container-nav-links.open,
+  .container-btn-nav.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 65%;
+    background: rgba(0, 0, 0, 0.95);
+    padding: 20px;
+    border-radius: 0 0 0 12px;
+    animation: slideIn 0.3s ease forwards;
+  }
+
+  .navigation {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .frame-17 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px; /* Gap between logo and hamburger */
+  }
+}
+
+@media (max-width: 480px) {
+  .container-nav-links.open,
+  .container-btn-nav.open {
+    width: 100%;
+    border-radius: 0;
+  }
+  .frame-17 {
+    gap: 20px;
+  }
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
