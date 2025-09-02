@@ -96,7 +96,7 @@ Start the development server:
 npm start
 
 
-Access the landing page at http://localhost:3000.
+Access the landing page at meedyo.vercel.app
 
 Usage
 
